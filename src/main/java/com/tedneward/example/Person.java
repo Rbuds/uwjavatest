@@ -7,7 +7,7 @@ public class Person {
   
   private class Comp{
       
-    public Person compare(Person b, Person a) {
+    public int compare(Person b, Person a) {
        return b.getAge() - a.getAge();
     }
   }
