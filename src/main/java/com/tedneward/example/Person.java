@@ -6,8 +6,6 @@ import java.util.*;
 public class Person {
   
   private class Comp{
-      public comp(Person a) {
-      }
       
       public Person compare(Person b, Person a) {
          int num = b.getAge() - a.getAge();
