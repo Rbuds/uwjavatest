@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Person {
   
-  private class AgeComparator{
+  public class AgeComparator{
       
     public int sort(Person b, Person a) {
        return b.getAge() - a.getAge();
