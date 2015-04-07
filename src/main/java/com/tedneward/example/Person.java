@@ -55,7 +55,7 @@ public class Person {
     return age;
   }
 
-  public int setName(String n) {
+  public void setName(String n) {
     if (n == null) {
       throw new IllegalArgumentException();
     }
