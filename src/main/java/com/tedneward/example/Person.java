@@ -7,9 +7,10 @@ public class Person {
   
   private class Comp{
       
-    public int compare(Person b, Person a) {
+    public int AgeComparator(Person b, Person a) {
        return b.getAge() - a.getAge();
     }
+
   }
   
   private int age;
@@ -30,7 +31,7 @@ public class Person {
     personCount++;
   }
 
-  /*public ageComparer(Person a, Person b) {
+  /*public AgeComparator(Person a, Person b) {
     Comp c = new comp();
     Person one = c.compare(a,b);
   }*/
