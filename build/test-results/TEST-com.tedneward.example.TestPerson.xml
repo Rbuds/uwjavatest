@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tedneward.example.TestPerson" tests="8" skipped="0" failures="3" errors="0" timestamp="2015-04-07T06:46:09" hostname="Ryan-HP" time="0.013">
+<testsuite name="com.tedneward.example.TestPerson" tests="8" skipped="0" failures="3" errors="0" timestamp="2015-04-07T06:50:57" hostname="Ryan-HP" time="0.014">
   <properties/>
   <testcase name="setNameToNull" classname="com.tedneward.example.TestPerson" time="0.005"/>
-  <testcase name="setAgeToBeNegative" classname="com.tedneward.example.TestPerson" time="0.001"/>
+  <testcase name="setAgeToBeNegative" classname="com.tedneward.example.TestPerson" time="0.0"/>
   <testcase name="exercisePesonEquals" classname="com.tedneward.example.TestPerson" time="0.003">
     <failure message="java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt;
 	at org.junit.Assert.fail(Assert.java:91)
@@ -57,7 +57,7 @@
   <testcase name="exerciseTheBasics" classname="com.tedneward.example.TestPerson" time="0.0"/>
   <testcase name="viewReadabletoString" classname="com.tedneward.example.TestPerson" time="0.0"/>
   <testcase name="useAgeComparator" classname="com.tedneward.example.TestPerson" time="0.001">
-    <failure message="java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt;
+    <failure message="java.lang.AssertionError: expected:&lt;[Person name:Matthew age:15 salary:0.0]&gt; but was:&lt;[Person name:Charlotte age:43 salary:150000.0]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;[Person name:Matthew age:15 salary:0.0]&gt; but was:&lt;[Person name:Charlotte age:43 salary:150000.0]&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
 	at org.junit.Assert.assertEquals(Assert.java:126)
