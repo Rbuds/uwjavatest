@@ -41,7 +41,7 @@ public class Person {
   }*/
 
   public int getPersonCount() {
-    return personCount();
+    return personCount;
   }
 
   public void setAge(int a) {
