@@ -47,8 +47,9 @@ public class Person implements Comparable<Person> {
   public void setAge(int a) {
     if (a < 0) {
       throw new IllegalArgumentException();
+    } else {
+      this.age = a;
     }
-    this.age = a;
   }
 
   public int getAge() {
