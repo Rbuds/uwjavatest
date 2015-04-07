@@ -95,7 +95,7 @@ public class TestPerson {
     // Call addPropertyChangeListener with a PropertyChangedListener
     // that has the following code in it:
   
-  //private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);  
+  private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);  
   public void addPropertyChangeListener(PropertyChangeListener listener) {
     assertEquals("ssn", pcs.getPropertyName());
     assertEquals("", pcs.getOldValue());
