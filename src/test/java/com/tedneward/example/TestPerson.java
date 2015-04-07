@@ -96,9 +96,9 @@ public class TestPerson {
     // that has the following code in it:
     
   public void addPropertyChangeListener(PropertyChangeListener listener) {
-    assertEquals("ssn", pce.getPropertyName());
-    assertEquals("", pce.getOldValue());
-    assertEquals("012-34-5678", pce.getNewValue());
+    assertEquals("ssn", pcs.getPropertyName());
+    assertEquals("", pcs.getOldValue());
+    assertEquals("012-34-5678", pcs.getNewValue());
   
     
 
