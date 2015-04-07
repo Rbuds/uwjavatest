@@ -48,7 +48,7 @@ public class Person {
 
   public void setAge(int a) {
     if (a < 0) {
-      throws IllegalArgumentException();
+      throw new IllegalArgumentException();
     }
     this.age = a;
   }
@@ -59,7 +59,7 @@ public class Person {
 
   public int setName(String n) {
     if (n == null) {
-      throws IllegalArgumentException();
+      throw new IllegalArgumentException();
     }
     this.name = n;
   }
