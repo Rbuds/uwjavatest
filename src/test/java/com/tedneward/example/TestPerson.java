@@ -94,13 +94,14 @@ public class TestPerson {
     // ============ YOUR CHANGES BEGIN HERE
     // Call addPropertyChangeListener with a PropertyChangedListener
     // that has the following code in it:
-  
-  private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);  
-  ted.addPropertyChangeListener(PropertyChangeListener listener);
-  listener.assertEquals("ssn", pcs.getPropertyName());
-  listener.assertEquals("", pcs.getOldValue());
-  listener.assertEquals("012-34-5678", pcs.getNewValue());
-
+   
+  ted.addPropertyChangeListener(new PropertyChangeListener() {
+      public void propertyChange(PropertyChangeEvent evt) {
+        listener.assertEquals("ssn", pcs.getPropertyName());
+        listener.assertEquals("", pcs.getOldValue());
+        listener.assertEquals("012-34-5678", pcs.getNewValue());
+      }
+  } );
   
 
   // ============ YOUR CHANGES END HERE
