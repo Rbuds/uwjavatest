@@ -95,11 +95,12 @@ public class TestPerson {
     // Call addPropertyChangeListener with a PropertyChangedListener
     // that has the following code in it:
     
-    public void addPropertyChangeListener(PropertyChangeListener listener) {
-      assertEquals("ssn", pce.getPropertyName());
-      assertEquals("", pce.getOldValue());
-      assertEquals("012-34-5678", pce.getNewValue());
-    }
+  @Test
+  public void addPropertyChangeListener(PropertyChangeListener listener) {
+    assertEquals("ssn", pce.getPropertyName());
+    assertEquals("", pce.getOldValue());
+    assertEquals("012-34-5678", pce.getNewValue());
+  }
     
 
     // ============ YOUR CHANGES END HERE
