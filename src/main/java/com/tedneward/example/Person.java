@@ -8,7 +8,7 @@ public class Person {
   private static class PersonComparator implements Comparator<Person> {
       
     public int compare(Person b, Person a) {
-       return b.getAge() - a.getAge());
+       return b.getAge() - a.getAge();
     }
 
   }
