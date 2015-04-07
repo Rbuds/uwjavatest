@@ -5,9 +5,9 @@ import java.util.*;
 
 public class Person {
   
-  private class Comp{
+  private class AgeComparator{
       
-    public int AgeComparator(Person b, Person a) {
+    public int sort(Person b, Person a) {
        return b.getAge() - a.getAge();
     }
 
