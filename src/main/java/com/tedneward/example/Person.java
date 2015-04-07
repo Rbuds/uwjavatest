@@ -5,10 +5,10 @@ import java.util.*;
 
 public class Person {
   
-  public class AgeComparator{
+  private static class PersonComparator implements Comparator<Person> {
       
-    public int sort(Person b, Person a) {
-       return b.getAge() - a.getAge();
+    public int compare(Person b, Person a) {
+       return b.getAge().compareTo(a.getAge());
     }
 
   }
