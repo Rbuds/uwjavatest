@@ -7,14 +7,9 @@ public class Person {
   
   private class Comp{
       
-      public Person compare(Person b, Person a) {
-         int num = b.getAge() - a.getAge();
-         if (num > 1) {
-            return b;
-         } else {
-            return a;
-         }
-      }
+    public Person compare(Person b, Person a) {
+       return b.getAge() - a.getAge();
+    }
   }
   
   private int age;
