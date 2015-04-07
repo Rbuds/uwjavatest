@@ -35,11 +35,6 @@ public class Person implements Comparable<Person> {
     personCount++;
   }
 
-  /*public AgeComparator(Person a, Person b) {
-    Comp c = new comp();
-    Person one = c.compare(a,b);
-  }*/
-
   public int getPersonCount() {
     return personCount;
   }
@@ -104,7 +99,7 @@ public class Person implements Comparable<Person> {
   }
   
   public boolean equals(Person other) {
-    return (this.name.equals(other.name) && this.age == other.age);
+    return (other.name.equals(this.name) && this.age == other.age);
   }
 
   public String toString() {

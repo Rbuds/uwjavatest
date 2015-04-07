@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tedneward.example.TestPerson" tests="8" skipped="0" failures="3" errors="0" timestamp="2015-04-07T06:37:52" hostname="Ryan-HP" time="0.037">
+<testsuite name="com.tedneward.example.TestPerson" tests="8" skipped="0" failures="3" errors="0" timestamp="2015-04-07T06:40:12" hostname="Ryan-HP" time="0.017">
   <properties/>
-  <testcase name="setAgeToBeNegative" classname="com.tedneward.example.TestPerson" time="0.022"/>
-  <testcase name="exercisePesonEquals" classname="com.tedneward.example.TestPerson" time="0.005">
+  <testcase name="setNameToNull" classname="com.tedneward.example.TestPerson" time="0.007"/>
+  <testcase name="setAgeToBeNegative" classname="com.tedneward.example.TestPerson" time="0.0"/>
+  <testcase name="exercisePesonEquals" classname="com.tedneward.example.TestPerson" time="0.004">
     <failure message="java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Ted age:43 salary:250000.0]&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
@@ -53,9 +54,9 @@
 	at java.lang.Thread.run(Thread.java:744)
 </failure>
   </testcase>
-  <testcase name="exerciseTheBasics" classname="com.tedneward.example.TestPerson" time="0.0"/>
+  <testcase name="exerciseTheBasics" classname="com.tedneward.example.TestPerson" time="0.001"/>
   <testcase name="viewReadabletoString" classname="com.tedneward.example.TestPerson" time="0.0"/>
-  <testcase name="useAgeComparator" classname="com.tedneward.example.TestPerson" time="0.002">
+  <testcase name="useAgeComparator" classname="com.tedneward.example.TestPerson" time="0.001">
     <failure message="java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt; but was: com.tedneward.example.Person&lt;[Person name:Matthew age:15 salary:0.0]&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
@@ -106,7 +107,7 @@
 	at java.lang.Thread.run(Thread.java:744)
 </failure>
   </testcase>
-  <testcase name="useNaturalComparison" classname="com.tedneward.example.TestPerson" time="0.001">
+  <testcase name="useNaturalComparison" classname="com.tedneward.example.TestPerson" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;[Person name:Ted age:41 salary:250000.0]&gt; but was:&lt;[Person name:Matthew age:15 salary:0.0]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;[Person name:Ted age:41 salary:250000.0]&gt; but was:&lt;[Person name:Matthew age:15 salary:0.0]&gt;
 	at org.junit.Assert.fail(Assert.java:91)
 	at org.junit.Assert.failNotEquals(Assert.java:645)
@@ -158,7 +159,6 @@
 </failure>
   </testcase>
   <testcase name="catchPropertyChange" classname="com.tedneward.example.TestPerson" time="0.0"/>
-  <testcase name="setNameToNull" classname="com.tedneward.example.TestPerson" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
