@@ -3,9 +3,13 @@ package com.tedneward.example;
 import java.beans.*;
 import java.util.*;
 
-public class Person {
+public class Person implements Comparable<Person> {
   
-  private static class PersonComparator implements Comparator<Person> {
+  public int compareTo(Person other) {
+    return this.getSalary() - other.getSalary();
+  }
+
+  private static class AgeComparator implements Comparator<Person> {
       
     public int compare(Person b, Person a) {
        return b.getAge() - a.getAge();
