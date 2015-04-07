@@ -100,13 +100,16 @@ public class TestPerson {
         assertEquals("ssn", pcs.getPropertyName());
         assertEquals("", pcs.getOldValue());
         assertEquals("012-34-5678", pcs.getNewValue());
+        assertEquals(false, ted.getPropertyChangeFired());
+        ted.setSSN("012-34-5678");
+        assertEquals(true, ted.getPropertyChangeFired());
       }
   } );
   
 
   // ============ YOUR CHANGES END HERE
   
-  assertEquals(false, ted.getPropertyChangeFired());
-  ted.setSSN("012-34-5678");
-  assertEquals(true, ted.getPropertyChangeFired());
+  //assertEquals(false, ted.getPropertyChangeFired());
+  //ted.setSSN("012-34-5678");
+  //assertEquals(true, ted.getPropertyChangeFired());
 }
