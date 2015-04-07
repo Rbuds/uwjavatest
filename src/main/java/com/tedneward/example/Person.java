@@ -102,8 +102,8 @@ public class Person {
     return (this.name.equals(other.name) && this.age == other.age);
   }
 
-  public String tostring() {
-    return "{{FIXME}}";
+  public String toString() {
+    return "[Person name:" + this.getName() + " age:" + this.getAge() + " salary:" + this.getSalary() + "]";
   }
 
   public int count() {
