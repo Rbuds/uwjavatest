@@ -9,7 +9,7 @@ public class Person implements Comparable<Person> {
     return (int) (this.getSalary() - other.getSalary());
   }
 
-  private static class AgeComparator implements Comparator<Person> {
+  public static class AgeComparator implements Comparator<Person> {
       
     public int compare(Person b, Person a) {
        return b.getAge() - a.getAge();
