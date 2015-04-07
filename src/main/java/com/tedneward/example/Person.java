@@ -6,7 +6,7 @@ import java.util.*;
 public class Person implements Comparable<Person> {
   
   public int compareTo(Person other) {
-    return (int) (this.getSalary() - other.getSalary());
+    return (int) (other.getSalary() - this.getSalary());
   }
 
   public static class AgeComparator implements Comparator<Person> {
