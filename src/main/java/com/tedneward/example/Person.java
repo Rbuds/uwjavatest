@@ -37,10 +37,10 @@ public class Person {
     personCount++;
   }
 
-  public ageComparer(Person a, Person b) {
+  /*public ageComparer(Person a, Person b) {
     Comp c = new comp();
     Person one = c.compare(a,b);
-  }
+  }*/
 
   public int getPersonCount() {
     return personCount();
