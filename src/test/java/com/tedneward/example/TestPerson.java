@@ -90,7 +90,7 @@ public class TestPerson {
   @Test
   public void catchPropertyChange() {
     Person ted = new Person("Ted", 43, 250000);
-    
+
     // ============ YOUR CHANGES BEGIN HERE
     // Call addPropertyChangeListener with a PropertyChangedListener
     // that has the following code in it:
@@ -109,4 +109,5 @@ public class TestPerson {
   assertEquals(false, ted.getPropertyChangeFired());
   ted.setSSN("012-34-5678");
   assertEquals(true, ted.getPropertyChangeFired());
+}
 }
