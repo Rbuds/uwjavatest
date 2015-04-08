@@ -99,7 +99,12 @@ public class Person implements Comparable<Person> {
   }
   
   public boolean equals(Person other) {
-    return (this.name.equals(other.name) && this.age == other.age);
+    if (this.name.equals(other.name) && this.age == other.age) {
+      return true;
+    } else {
+      return false;
+    }
+    //return (this.name.equals(other.name) && this.age == other.age);
   }
 
   public String toString() {
