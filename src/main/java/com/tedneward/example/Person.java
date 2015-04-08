@@ -98,9 +98,9 @@ public class Person implements Comparable<Person> {
     return age + 10;
   }
   
-  public boolean equals(Object other) {
+  public boolean equals(Object thing) {
     if (other instanceof Person) {
-      Person other = (Person)other;
+      Person other = (Person)thing;
     }
     return (this.name.equals(other.name) && this.age == other.age);
   }
