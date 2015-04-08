@@ -20,7 +20,7 @@ public class Person implements Comparable<Person> {
   private int age;
   private String name;
   private double salary;
-  private String ssn;
+  private String ssn = "";
   private boolean propertyChangeFired = false;
   private int personCount = 0;
   
