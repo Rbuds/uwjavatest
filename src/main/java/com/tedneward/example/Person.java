@@ -101,6 +101,7 @@ public class Person implements Comparable<Person> {
   public boolean equals(Object other) {
     if (other instanceof Person) {
       Person other = (Person)other;
+    }
     return (this.name.equals(other.name) && this.age == other.age);
   }
 
