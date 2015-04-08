@@ -100,7 +100,7 @@ public class Person implements Comparable<Person> {
   
   public boolean equals(Object thing) {
     if (thing instanceof Person) {
-      return (this.name.equals(other.name) && this.age == other.age);
+      return (this.name.equals(thing.name) && this.age == thing.age);
     } else {
       Person other = (Person)thing;
       return false;
